@@ -1,0 +1,146 @@
+/* Navbar */
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+}
+
+#main-nav .container > a,
+#main-nav ul {
+  justify-self: center;
+}
+
+/* Articles */
+#home-articles .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#home-articles .articles-container > *:last-child,
+#home-articles .articles-container > *:first-child {
+  grid-column: 1;
+  grid-template-columns: 1fr;
+}
+
+#home-articles .articles-container > *:last-child {
+  grid-column: 1 / span 2;
+}
+
+/* Footer */
+#footer-content {
+  grid-gap: 1rem;
+  padding: 0 1rem;
+}
+
+footer .container {
+  padding: 2rem 0;
+}
+
+/* ABOUT */
+#about .page-content {
+  grid-template-columns: 1fr;
+}
+
+#about-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* MEDIA */
+@media (max-width: 600px) {
+  /* SHOWCASE */
+  #showcase {
+    padding: 2rem 1rem;
+  }
+
+  #showcase .showcase-container {
+    grid-template-columns: 1fr;
+  }
+
+  #showcase > .container {
+    padding: 0;
+  }
+
+  #showcase .showcase-content > .category {
+    margin-bottom: 1rem;
+  }
+
+  /* ARTICLES */
+  #home-articles {
+    padding-bottom: 0.5rem;
+  }
+
+  #home-articles .container {
+    padding: 0 0.5rem;
+  }
+
+  #home-articles .articles-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+
+  #home-articles .articles-container > *:last-child {
+    grid-column: 1;
+  }
+
+  /* FOOTER */
+  footer > .container {
+    padding-top: 1rem;
+  }
+
+  #footer-content {
+    grid-template-columns: 1fr;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  #footer-content div {
+    border-bottom: 1px solid #555;
+  }
+
+  #footer-content h3 {
+    font-size: 2rem;
+  }
+
+  #ft-box-1 img {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #ft-box-2 {
+    padding-bottom: 1rem;
+  }
+
+  #ft-box-3 li {
+    width: 100%;
+  }
+
+  #ft-box-3 li:last-child {
+    border-bottom: none;
+  }
+
+  #ft-box-4 {
+    border-bottom: none !important;
+  }
+
+  #footer-copyr p {
+    font-size: 1rem;
+  }
+
+  /* ARTICLE PAGE */
+  #article > div {
+    padding: 1rem 0;
+  }
+
+  #article .page-content {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  #article aside {
+    text-align: center;
+  }
+}
