@@ -374,6 +374,10 @@ footer > .container {
   border: none;
 }
 
+#ft-box-2 #subscribe {
+  cursor: pointer;
+}
+
 #ft-box-3 li {
   border-bottom: 1px dotted #555;
   padding: 0.5rem 0;
